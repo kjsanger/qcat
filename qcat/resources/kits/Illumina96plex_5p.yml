@@ -1,0 +1,392 @@
+---
+barcode_set_1:
+  - fwd_strand: 1
+    id: 1
+    name: barcode_01
+    sequence: ACTAACGG
+    description: "5p barcode_01"
+  - fwd_strand: 1
+    id: 2
+    name: barcode_02
+    sequence: CGAGTCGA
+  - fwd_strand: 1
+    id: 3
+    name: barcode_03
+    sequence: TCTTTACG
+  - fwd_strand: 1
+    id: 4
+    name: barcode_04
+    sequence: CGACGACG
+  - fwd_strand: 1
+    id: 5
+    name: barcode_05
+    sequence: AAAGAGAA
+  - fwd_strand: 1
+    id: 6
+    name: barcode_06
+    sequence: ATATGAGA
+  - fwd_strand: 1
+    id: 7
+    name: barcode_07
+    sequence: CAGCCCGA
+  - fwd_strand: 1
+    id: 8
+    name: barcode_08
+    sequence: ATCGTTCC
+  - fwd_strand: 1
+    id: 9
+    name: barcode_09
+    sequence: CTGTAACA
+  - fwd_strand: 1
+    id: 10
+    name: barcode_10
+    sequence: TTTGTGGA
+  - fwd_strand: 1
+    id: 11
+    name: barcode_11
+    sequence: TCAAGGCG
+  - fwd_strand: 1
+    id: 12
+    name: barcode_12
+    sequence: CTTGCGAG
+  - fwd_strand: 1
+    id: 13
+    name: barcode_13
+    sequence: CTCCGTCT
+  - fwd_strand: 1
+    id: 14
+    name: barcode_14
+    sequence: TACTCACT
+  - fwd_strand: 1
+    id: 15
+    name: barcode_15
+    sequence: TATTGAAG
+  - fwd_strand: 1
+    id: 16
+    name: barcode_16
+    sequence: AACGAGTG
+  - fwd_strand: 1
+    id: 17
+    name: barcode_17
+    sequence: GGCCATGG
+  - fwd_strand: 1
+    id: 18
+    name: barcode_18
+    sequence: ATGCAAGC
+  - fwd_strand: 1
+    id: 19
+    name: barcode_19
+    sequence: GCACGCCC
+  - fwd_strand: 1
+    id: 20
+    name: barcode_20
+    sequence: TCAGAACG
+  - fwd_strand: 1
+    id: 21
+    name: barcode_21
+    sequence: TGATATAA
+  - fwd_strand: 1
+    id: 22
+    name: barcode_22
+    sequence: AACTTAGC
+  - fwd_strand: 1
+    id: 23
+    name: barcode_23
+    sequence: CTTGGCGC
+  - fwd_strand: 1
+    id: 24
+    name: barcode_24
+    sequence: TGGAAGCC
+  - fwd_strand: 1
+    id: 25
+    name: barcode_25
+    sequence: GATAGGTG
+  - fwd_strand: 1
+    id: 26
+    name: barcode_26
+    sequence: ATTCAGCC
+  - fwd_strand: 1
+    id: 27
+    name: barcode_27
+    sequence: AGCAACGT
+  - fwd_strand: 1
+    id: 28
+    name: barcode_28
+    sequence: CTCAAGCG
+  - fwd_strand: 1
+    id: 29
+    name: barcode_29
+    sequence: ACTCGTCG
+  - fwd_strand: 1
+    id: 30
+    name: barcode_30
+    sequence: AAATGCAC
+  - fwd_strand: 1
+    id: 31
+    name: barcode_31
+    sequence: CCGATGCT
+  - fwd_strand: 1
+    id: 32
+    name: barcode_32
+    sequence: TACCCGTG
+  - fwd_strand: 1
+    id: 33
+    name: barcode_33
+    sequence: CTTGCTCC
+  - fwd_strand: 1
+    id: 34
+    name: barcode_34
+    sequence: AAGTACCC
+  - fwd_strand: 1
+    id: 35
+    name: barcode_35
+    sequence: GAGATTAA
+  - fwd_strand: 1
+    id: 36
+    name: barcode_36
+    sequence: ACCATAAA
+  - fwd_strand: 1
+    id: 37
+    name: barcode_37
+    sequence: ACTCATAC
+  - fwd_strand: 1
+    id: 38
+    name: barcode_38
+    sequence: GCGAACAG
+  - fwd_strand: 1
+    id: 39
+    name: barcode_39
+    sequence: TAAATATA
+  - fwd_strand: 1
+    id: 40
+    name: barcode_40
+    sequence: CATGGTCT
+  - fwd_strand: 1
+    id: 41
+    name: barcode_41
+    sequence: TGCATACC
+  - fwd_strand: 1
+    id: 42
+    name: barcode_42
+    sequence: AGTCCAAA
+  - fwd_strand: 1
+    id: 43
+    name: barcode_43
+    sequence: TTATTCGG
+  - fwd_strand: 1
+    id: 44
+    name: barcode_44
+    sequence: GAGCGACC
+  - fwd_strand: 1
+    id: 45
+    name: barcode_45
+    sequence: GGATTGAT
+  - fwd_strand: 1
+    id: 46
+    name: barcode_46
+    sequence: TAGGCCCA
+  - fwd_strand: 1
+    id: 47
+    name: barcode_47
+    sequence: GAGTGCCG
+  - fwd_strand: 1
+    id: 48
+    name: barcode_48
+    sequence: GCTATTTG
+  - fwd_strand: 1
+    id: 49
+    name: barcode_49
+    sequence: CCCGAAGG
+  - fwd_strand: 1
+    id: 50
+    name: barcode_50
+    sequence: AAGCTAAA
+  - fwd_strand: 1
+    id: 51
+    name: barcode_51
+    sequence: CCATTATT
+  - fwd_strand: 1
+    id: 52
+    name: barcode_52
+    sequence: GGCGAACC
+  - fwd_strand: 1
+    id: 53
+    name: barcode_53
+    sequence: CCTCACGC
+  - fwd_strand: 1
+    id: 54
+    name: barcode_54
+    sequence: AAAGTCCC
+  - fwd_strand: 1
+    id: 55
+    name: barcode_55
+    sequence: AGACCCAG
+  - fwd_strand: 1
+    id: 56
+    name: barcode_56
+    sequence: GTTATATC
+  - fwd_strand: 1
+    id: 57
+    name: barcode_57
+    sequence: TGCGCATT
+  - fwd_strand: 1
+    id: 58
+    name: barcode_58
+    sequence: CCTATTGC
+  - fwd_strand: 1
+    id: 59
+    name: barcode_59
+    sequence: ACCACTCC
+  - fwd_strand: 1
+    id: 60
+    name: barcode_60
+    sequence: GTTTACGA
+  - fwd_strand: 1
+    id: 61
+    name: barcode_61
+    sequence: CAGGCGGC
+  - fwd_strand: 1
+    id: 62
+    name: barcode_62
+    sequence: TAGTTTGC
+  - fwd_strand: 1
+    id: 63
+    name: barcode_63
+    sequence: GCATCGGC
+  - fwd_strand: 1
+    id: 64
+    name: barcode_64
+    sequence: GGTGCGTG
+  - fwd_strand: 1
+    id: 65
+    name: barcode_65
+    sequence: AGGCTACG
+  - fwd_strand: 1
+    id: 66
+    name: barcode_66
+    sequence: TATTCAGA
+  - fwd_strand: 1
+    id: 67
+    name: barcode_67
+    sequence: CCTTTCCC
+  - fwd_strand: 1
+    id: 68
+    name: barcode_68
+    sequence: TATACCAG
+  - fwd_strand: 1
+    id: 69
+    name: barcode_69
+    sequence: TACCCAAA
+  - fwd_strand: 1
+    id: 70
+    name: barcode_70
+    sequence: CTCACTGG
+  - fwd_strand: 1
+    id: 71
+    name: barcode_71
+    sequence: TTTCCCAC
+  - fwd_strand: 1
+    id: 72
+    name: barcode_72
+    sequence: ACGGTCCG
+  - fwd_strand: 1
+    id: 73
+    name: barcode_73
+    sequence: CAGTCAAC
+  - fwd_strand: 1
+    id: 74
+    name: barcode_74
+    sequence: GCCGCCCG
+  - fwd_strand: 1
+    id: 75
+    name: barcode_75
+    sequence: AGCGTCTC
+  - fwd_strand: 1
+    id: 76
+    name: barcode_76
+    sequence: CCACTGGC
+  - fwd_strand: 1
+    id: 77
+    name: barcode_77
+    sequence: CCAACGCC
+  - fwd_strand: 1
+    id: 78
+    name: barcode_78
+    sequence: TCACTACC
+  - fwd_strand: 1
+    id: 79
+    name: barcode_79
+    sequence: TGACGCGT
+  - fwd_strand: 1
+    id: 80
+    name: barcode_80
+    sequence: GTAGTCAC
+  - fwd_strand: 1
+    id: 81
+    name: barcode_81
+    sequence: TCCCAAAC
+  - fwd_strand: 1
+    id: 82
+    name: barcode_82
+    sequence: GTGTGTGC
+  - fwd_strand: 1
+    id: 83
+    name: barcode_83
+    sequence: GGTTAAAG
+  - fwd_strand: 1
+    id: 84
+    name: barcode_84
+    sequence: CACCTACA
+  - fwd_strand: 1
+    id: 85
+    name: barcode_85
+    sequence: GACGTGAA
+  - fwd_strand: 1
+    id: 86
+    name: barcode_86
+    sequence: CGCTCATC
+  - fwd_strand: 1
+    id: 87
+    name: barcode_87
+    sequence: GCGGCGCC
+  - fwd_strand: 1
+    id: 88
+    name: barcode_88
+    sequence: CACAGGTT
+  - fwd_strand: 1
+    id: 89
+    name: barcode_89
+    sequence: GCTTAACC
+  - fwd_strand: 1
+    id: 90
+    name: barcode_90
+    sequence: AAGACCCG
+  - fwd_strand: 1
+    id: 91
+    name: barcode_91
+    sequence: AGGACAAG
+  - fwd_strand: 1
+    id: 92
+    name: barcode_92
+    sequence: GTGTCTTT
+  - fwd_strand: 1
+    id: 93
+    name: barcode_93
+    sequence: GAAACTGA
+  - fwd_strand: 1
+    id: 94
+    name: barcode_94
+    sequence: CAGGACCG
+  - fwd_strand: 1
+    id: 95
+    name: barcode_95
+    sequence: GATGCTGG
+  - fwd_strand: 1
+    id: 96
+    name: barcode_96
+    sequence: CTCGGCAG
+kit: ILLUMINA96
+model: ~
+name: Illumina96plex
+sequence: CAAGCAGAAGACGGCATACGAGATNNNNNNNN
+
