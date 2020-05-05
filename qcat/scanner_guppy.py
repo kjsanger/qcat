@@ -40,8 +40,8 @@ class BarcodeScannerGuppy(BarcodeScanner):
                        'RAB':  'RAB204'}
 
     def __init__(self, min_quality=None, kit_folder=None, kit=None,
-                 enable_filter_barcodes=False, scan_middle_adapter=False,
-                 threads=1):
+                 enable_filter_barcodes=False, require_barcodes_both_ends=False,
+                 scan_middle_adapter=False, threads=1):
 
         if min_quality is None:
             min_quality = 60
@@ -53,6 +53,10 @@ class BarcodeScannerGuppy(BarcodeScanner):
         if enable_filter_barcodes:
             logging.warning("Guppy/Albacore do not support filtering "
                             "barcodes in batch mode. Ignoring parameter.")
+
+        if require_barcodes_both_ends:
+            logging.warning("qcat Guppy does not support requiring barcodes "
+                            "at both end in batch mode. Ignoring parameter.")
 
         super(BarcodeScannerGuppy, self).__init__(min_quality,
                                                   kit,

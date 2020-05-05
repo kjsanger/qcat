@@ -76,7 +76,8 @@ def get_kits(kit_folder=None):
 
 
 def factory(mode="epi2me", min_quality=None, kit=None, kit_folder=None,
-            enable_filter_barcodes=False, scan_middle_adapter=False, threads=1):
+            enable_filter_barcodes=False, require_barcodes_both_ends=False,
+            scan_middle_adapter=False, threads=1):
     """
     Create a BarcodeScanner object
 
@@ -104,6 +105,7 @@ def factory(mode="epi2me", min_quality=None, kit=None, kit_folder=None,
                             kit_folder=kit_folder,
                             kit=kit,
                             enable_filter_barcodes=enable_filter_barcodes,
+                            require_barcodes_both_ends=require_barcodes_both_ends,
                             scan_middle_adapter=scan_middle_adapter,
                             threads=threads
                             )

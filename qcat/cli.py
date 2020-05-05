@@ -109,6 +109,11 @@ def parse_args(argv):
                         type=int,
                         default=1,
                         help="Number of threads. Only works with in guppy mode")
+    general_group.add_argument("--require-barcodes-both-ends",
+                        dest="REQUIRE_BARCODES_BOTH_ENDS",
+                        action='store_true',
+                        help="Require barcodes at both ends to demultiplex")
+
     general_group.add_argument("--min-read-length",
                                dest="min_length",
                                type=int,
@@ -443,8 +448,9 @@ def write_multiplexing_result(barcode_dict, comment, name, sequence, tsv):
 
 
 def qcat_cli(reads_fq, kit, mode, nobatch, out,
-               min_qual, tsv, output, threads, trim, adapter_yaml, quiet, filter_barcodes, middle_adapter, min_read_length,
-               qcat_config):
+             min_qual, tsv, output, threads, trim, adapter_yaml, quiet,
+             filter_barcodes, barcodes_both_ends, middle_adapter, min_read_length,
+             qcat_config):
     """
     Runs barcode detection for each read in the fastq file
     and print the read name + the barcode to a tsv file
@@ -479,6 +485,7 @@ def qcat_cli(reads_fq, kit, mode, nobatch, out,
                        min_quality=min_qual,
                        kit_folder=adapter_yaml,
                        enable_filter_barcodes=filter_barcodes,
+                       require_barcodes_both_ends=barcodes_both_ends,
                        scan_middle_adapter=middle_adapter,
                        threads=threads)
 
@@ -621,6 +628,7 @@ def main(argv=sys.argv[1:]):
                  adapter_yaml=None,#=args.adapter_yaml, #args.barcode_fa,
                  quiet=args.QUIET,
                  filter_barcodes=args.FILTER_BARCODES,
+                 barcodes_both_ends=args.REQUIRE_BARCODES_BOTH_ENDS,
                  middle_adapter=args.DETECT_MIDDLE,
                  min_read_length=args.min_length,
                  qcat_config=qcat_config)

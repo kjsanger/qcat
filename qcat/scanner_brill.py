@@ -19,7 +19,9 @@ except ImportError as e:
 
 class BarcodeScannerBrill(BarcodeScanner):
 
-    def __init__(self, min_quality=None, kit_folder=None, kit=None, enable_filter_barcodes=False, scan_middle_adapter=False):
+    def __init__(self, min_quality=None, kit_folder=None, kit=None,
+                 enable_filter_barcodes=False, require_barcodes_both_ends=False,
+                 scan_middle_adapter=False):
 
         if min_quality is None:
             min_quality = 10
@@ -28,6 +30,7 @@ class BarcodeScannerBrill(BarcodeScanner):
                                                   kit,
                                                   kit_folder=kit_folder,
                                                   enable_filter_barcodes=enable_filter_barcodes,
+                                                  require_barcodes_both_ends=require_barcodes_both_ends,
                                                   scan_middle_adapter=scan_middle_adapter)
 
         os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'

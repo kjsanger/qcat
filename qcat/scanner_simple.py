@@ -9,7 +9,8 @@ from qcat.scanner_base import BarcodeScanner, find_highest_scoring_barcode, \
 
 class BarcodeScannerSimple(BarcodeScanner):
 
-    def __init__(self, min_quality=None, kit_folder=None, kit=None, enable_filter_barcodes=False, scan_middle_adapter=False, threads=1):
+    def __init__(self, min_quality=None, kit_folder=None, kit=None, enable_filter_barcodes=False,
+                 require_barcodes_both_ends=False, scan_middle_adapter=False, threads=1):
 
         if min_quality is None:
             min_quality = 60
@@ -23,6 +24,7 @@ class BarcodeScannerSimple(BarcodeScanner):
                                                    None,
                                                    kit_folder=kit_folder,
                                                    enable_filter_barcodes=enable_filter_barcodes,
+                                                   require_barcodes_both_ends=require_barcodes_both_ends,
                                                    scan_middle_adapter=scan_middle_adapter
                                                    )
         if os.path.isfile(kit) and os.path.exists(kit):

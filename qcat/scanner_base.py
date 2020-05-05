@@ -413,7 +413,9 @@ class BarcodeScanner(object):
     """
 
     def __init__(self, min_quality, kit_name, kit_folder=None,
-                 enable_filter_barcodes=False, scan_middle_adapter=False):
+                 enable_filter_barcodes=False,
+                 require_barcodes_both_ends=False,
+                 scan_middle_adapter=False):
         """
         Init
 
@@ -434,6 +436,7 @@ class BarcodeScanner(object):
         self.override_kit_name = None
 
         self.enable_filter_barcodes = enable_filter_barcodes
+        self.require_barcodes_both_ends = require_barcodes_both_ends
         self.scan_middle_adapter = scan_middle_adapter
 
         # Get kets
@@ -568,10 +571,10 @@ class BarcodeScanner(object):
             barcode_dict_5p_rc = empty_return_dict()
 
         # Find best barcode
-        results = [barcode_dict_5p, barcode_dict_5p_rc]
-
         best = None
         best_score = 0.0
+
+        results = [barcode_dict_5p, barcode_dict_5p_rc]
         for i in range(0, len(results)):
             result = results[i]
             if result:
@@ -589,6 +592,14 @@ class BarcodeScanner(object):
                         barcode_dict_5p['barcode'].id != barcode_dict_5p_rc['barcode'].id:
                     best = empty_return_dict()
                     best['exit_status'] = 1002
+
+        if self.require_barcodes_both_ends:
+            if not barcode_dict_5p['barcode'] or not barcode_dict_5p_rc['barcode']:
+                logging.debug("rejecting single barcode because both ends are "
+                              "required: 5p: {}, 5p_rc: {}".format(
+                              barcode_dict_5p['barcode'],
+                              barcode_dict_5p_rc['barcode']))
+                best = empty_return_dict()
 
         if self.scan_middle_adapter and best['adapter'] and self.scan_middle(read_sequence, best['adapter'].kit, qcat_config):
             best = empty_return_dict()
